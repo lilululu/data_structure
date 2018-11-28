@@ -19,7 +19,9 @@ class Str{
 
         $flag=0;
 
-        $index=null;
+
+        $index=0;
+
 
 //        match success total
         $sum=0;
@@ -27,15 +29,16 @@ class Str{
         $count1=strlen($str1);
         $count2=strlen($str2);
 
-        $i=0;
 
-        while($i<$count1){
+        for($i=0;$i<$count1;$i++){
+
 
             if($str1[$i] == $str2[$j]){
 
                 $sum+=1;
 
-                if($index === null){
+
+                if($index == 0){
 
 
                     $index=$i;
@@ -44,19 +47,15 @@ class Str{
 
                 $j++;
 
-                $i++;
             }else{
 
 //                if match fail ,all is start from 0
-
-
-                $i=$i-$j+1;
 
                 $sum=0;
 
                 $j=0;
 
-                $index=null;
+                $index=0;
             }
 
             if($sum == $count2){
@@ -87,13 +86,10 @@ class Str{
 
 }
 
-//$str1='bbbbc';
-//
-//$str2='bbbc';
 
-$str1='abcdefgf';
+$str1='abcdefhhhhhhhhhhhg';
 
-$str2='abcde';
+$str2='abcdefg';
 
 $Str=new Str();
 
