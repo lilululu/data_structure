@@ -54,6 +54,8 @@ class queueLink{
             $this->near = $this->head;
         }
 
+        return $next->data;
+
 
 
     }
@@ -84,16 +86,16 @@ class queueLink{
     }
 }
 
-$queue=new queueLink();
-
-$queue->push(1);
-$queue->push(2);
-$queue->push(3);
-
-$queue->show();
-
-$queue->pop();
-
-echo '<br/>';
-$queue->show();
+//$queue=new queueLink();
+//
+//$queue->push(1);
+//$queue->push(2);
+//$queue->push(3);
+//
+//$queue->show();
+//
+//$queue->pop();
+//
+//echo '<br/>';
+//$queue->show();
 
