@@ -9,21 +9,13 @@
 //er cha lian biao
 
 class BiTNode{
-
-
     public $data='';
-
     public $lchild;
-
     public $rchild;
-
     function __construct($data='')
     {
-
         $this->data=$data;
-
         $this->lchild='';
-
         $this->rchild='';
     }
 }

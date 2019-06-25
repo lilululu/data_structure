@@ -6,20 +6,29 @@
  * Time: 15:21
  */
 
+function getNum($n){
+    if($n<=0){
+        return 0;
+    }elseif($n==1){
+        return 1;
+    }
+    return getNum($n-1)+getNum($n-2);
+}
 
-$n=100;
+function getNum2($n){
+    $arr=[];
+    $arr[0]=0;
+    $arr[1]=1;
+    for($i=2;$i<=$n;$i++){
+        $arr[$i]=$arr[$i-1]+$arr[$i-2];
+    }
 
-$sum=0;
+    return $arr[$n];
+}
+$n=1;
+while($n<7){
+    echo getNum2($n)."<br/>";
+    $n++;
+}
 
-$sum=(1+$n)*(100/2);
-//for($i=1;$i<=100;$i++){
-//
-//    $sum+=$i;
-//}
-
-
-
-
-
-var_dump($sum);
 

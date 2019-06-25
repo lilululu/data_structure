@@ -11,28 +11,16 @@
 include './Node.php';
 
 class queueLink{
-
-
     public $head;
-
-
     public $near;
-
     function __construct()
     {
-
         $this->head=new Node();
-
         $this->near=$this->head;
     }
-
     function push($data){
-
         $new=new Node($data);
-
-
         $this->near->next=$new;
-
         $this->near=$new;
     }
 

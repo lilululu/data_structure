@@ -7,36 +7,24 @@
  */
 
 class Node{
-
     public $data;
-
     public $next;
-
     public function __construct($data=null)
     {
         $this->data=$data;
-
         $this->next=null;
-
     }
 }
 
 class doubleNode{
-
     public $data;
-
     public $next;
-
     public $prior;
-
     public function __construct($data=null)
     {
         $this->data=$data;
-
         $this->next=null;
-
         $this->prior=null;
-
     }
 }
 
